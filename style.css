@@ -43,9 +43,10 @@ h1 {
   font-weight: bold;
 }
 .key.active {
-  border: 2px solid var(--gold);
+  border: none;
   border-radius: 4px;
-  color: var(--gold);
+  color: var(--dark);
+  background-color: var(--gold);
 }
 
 .composer {
