@@ -1,69 +1,80 @@
+:root {
+  --gold: #ffd700;
+  --dark: #141414;
+  --light: #dcdcdc;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark);
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-    color: #FFF;
-    margin-bottom: 20px;
+  font-family: 'Permanent Marker', cursive;
+  color: var(--light);
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
 }
 .keys {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .key {
-    width: 80px;
-    height: 80px;
-    border: 2px solid #FFF;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--light);
+  border-radius: 4px;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 .key.active {
-    border: 2px solid #FF0;
-    color: #FF0;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  color: var(--gold);
 }
 
 .composer {
-    width: 260px;
-    margin-top: 20px;
+  width: 260px;
+  margin-top: 20px;
 }
 .composer #input {
-    width: 100%;
-    outline: none;
-    font-size: 17px;
-    padding: 10px 15px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 10px 15px;
 }
 .composer button {
-    width: 100%;
-    height: 40px;
-    background: none;
-    border: 2px solid #FFF;
-    color: #FFF;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: 2px solid var(--light);
+  border-radius: 4px;
+  color: var(--light);
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .composer button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    margin-top: 20px;
-    color: #FFF;
-    font-size: 13px;
+  margin-top: 20px;
+  color: var(--light);
+  font-size: 13px;
 }
